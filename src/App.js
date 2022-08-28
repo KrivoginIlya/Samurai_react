@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-import Header from "./Component/Header.jsx";
-import Nav from "./Component/nav_bar.jsx";
-import Profile from "./Component/Profile.jsx";
-import Footer from "./Component/footer.jsx";
+import Header from "./Component/Header/Header.jsx";
+import Nav from "./Component/NavBar/NavBar.jsx";
+import Profile from "./Component/Profile/Profile.jsx";
+import Footer from "./Component/Footer/Footer.jsx";
 
 const App = () => {
   return (
