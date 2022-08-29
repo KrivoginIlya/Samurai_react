@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+.app_wrapper {
+  display: grid;
+  margin: 3px;
+
+
+  grid-template-areas: 
+  "h h"
+  "n c"
+  "f f";
+  grid-template-rows: 60px 2fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+}

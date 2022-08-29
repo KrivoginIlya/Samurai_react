@@ -1,0 +1,21 @@
+.nav {
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+     align-items: start;
+    grid-area: n;
+    background-color: darkgrey;
+    border-radius: 10px;
+    }
+    .nav_a {
+      display:block;
+      width: 150px;
+      margin-left:5px;
+      margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    }
+    .nav_a :hover {
+      cursor: pointer;
+      background-color: rgb(243, 172, 172);
+    }
