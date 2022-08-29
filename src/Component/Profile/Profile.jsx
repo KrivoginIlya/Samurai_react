@@ -5,7 +5,7 @@ import MyPost from "./MyPost/MyPost.jsx"
 
 const Profile = () => {
   return(
-    <div className = {p.cocontent}>
+    <div className = {p.content}>
       <CardUser/>
       <MyPost/>
     </div>

@@ -1,11 +1,29 @@
+.user {
+  border-radius:10px;
+  margin: 5px;
+}
 .img_heder_content {
     height: 100px;
     width: 100%;
     border-radius: 10px;
-  }
+    }
   .user_info {
-    display:flex;
-    justify-content: start;
-    flex-direction: row;
-  
+    display:grid;
+    grid-template-areas: 
+    'userpict' 'userinfo'  ;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 6fr 3fr;
+    grid-gap: 10px;
   }
+  .avatar {
+    background-color: white;
+    border-radius: 10px;
+     width: 140px;
+    
+  }
+  .data {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+   }
+   
