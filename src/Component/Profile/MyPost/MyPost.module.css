@@ -1,44 +1,7 @@
-.user_post  {
-    display:flex;
-    flex-direction: column;
-    height: 150px;
-    
-  }
-  .user_post_input {  
-    height: 50px;
-    border: none;  
-    width: 800px;
-    background-color:rgb(228, 218, 218);
-  }
-  .user_send_post {
-    width: 100px;
-    height: 80px;
-    background-color: forestgreen;
-    color:aliceblue;
-    border: none;
-    cursor: pointer;
-   
-  }
-  .user_send_post:hover {
-    background-color: blue;
-  }
-  
-  .news_block {
-    display:flex;
-    justify-content: center;
-    width:95%;
-    height:400px;
-    border-radius: 5px;
-    border: solid 2px rgb(194, 181, 181);
-    background-image: url(https://pixelbox.ru/wp-content/uploads/2021/09/background-chat-vk-1.png) ;
-  }
-  .message_list {
-    margin-top: 20px;
-    display:flex;
-    justify-content: center;
-    width:95%;
-    height:400px;
-    border-radius: 5px;
-    border: solid 2px rgb(194, 181, 181);
-    
-  }
+.containerPost {
+  display: grid;
+  margin: 5px;
+  grid-template-areas: 
+  'post';
+  grid-template-columns: 9fr ;
+}

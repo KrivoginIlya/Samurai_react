@@ -1,9 +1,9 @@
 .content {
     display: grid;
     grid-area: c;
-    background-color: beige;
     border-radius: 10px;
-    }
+    background-color: rgb(230, 225, 225);
+  }
     
     
     .user_post  {

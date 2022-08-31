@@ -1,4 +1,27 @@
-.img {
+.header{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+}
+.imguser {
+    margin-right: 5px;
     width: 50px;
     border-radius: 10px;
+}
+.content {
+    margin: 10px;
+}
+.content img {
+    width: 100%;
+}
+.like{
+    width: 20px;
+    cursor: pointer;
+}
+.item{
+    background-color: white;
+    border: solid 2px rgb(230, 224, 224);
+    border-radius: 10px;
+    max-width:1000px;
+    padding: 10px;
 }
