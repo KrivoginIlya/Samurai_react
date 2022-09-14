@@ -1,25 +1,24 @@
 import React from "react";
 import post from "./Post.module.css"
 
-const Post = () => {
+const Post = (props) => {
+    
     return(
 <div>
     <div className={post.item}>
         <div className={post.header}>
             <img className={post.imguser} src="https://pixelbox.ru/wp-content/uploads/2021/05/ava-vk-animal-14.jpg" alt="" /> 
-            <p>Name user</p>
+            <p>{props.name}</p>
         </div>
         <div className = {post.content}>
-            <img  src="https://sun9-53.userapi.com/impg/pvWVXA5nGhT2I_DeMFwVQp98uFx9dduOJlZC-g/r5UtQWIiBgU.jpg?size=604x391&quality=95&sign=8ed7899ddef57044954c462543e5a4f1&type=album"/>        
-           Text klajsdiuir eirulwkjerhfgdhdfghdfghdfhdghdhflwiert tjlksrtiwerek  rwlekjrlkwejri4 3rlwkejrj i4ur welkrjw er 
+            <img src="https://sun9-85.userapi.com/impg/aka2IOcgdY3TmZWDtNbkJ5nTRnlBZaLhv6QWHw/J2pG4oVqy_4.jpg?size=1200x800&quality=95&sign=0d7fa1356a4aa8c08181ea50bc4a3749&type=album"/>
+        <span>{props.message}</span>
         </div>
         <div className = {post.footer}>
-        <button><img className={post.like} src="http://cdn.onlinewebfonts.com/svg/img_165452.png"/> 10</button>
+        <button><img className={post.like} src="http://cdn.onlinewebfonts.com/svg/img_165452.png"/> {props.like}</button>
         </div>
     </div>
-</div>
-        
-        
-    )
+</div>      
+    )  
 }
 export default Post
