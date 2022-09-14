@@ -3,7 +3,9 @@ import Post from "./Post/Post.jsx"
 import mp from "./MyPost.module.css"
 
 
-const MyPost = ()=> {
+const MyPost = (props)=> {
+
+const postData = props.posts.map(p => <Post name={p.name} img={p.img} message={p.message} like={p.likes}/>)
 
     return (
       <div>
@@ -12,8 +14,7 @@ const MyPost = ()=> {
           <button>Send</button>
         </div>
         <div className={mp.containerPost}>
-        <Post name='Jon Finger' message='Helloy' like='30'/>
-        <Post name='Lily Finger' message='Good day' like='425'/>
+          {postData}
       </div>
       </div>
     )

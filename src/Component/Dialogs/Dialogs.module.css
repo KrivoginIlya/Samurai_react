@@ -1,0 +1,28 @@
+.dialogs {
+display: flex;
+flex-flow: row nowrap;
+ }
+
+ .messages {
+    background-color: white;
+    margin: 5px;
+    flex-basis: 80%;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+ }
+ .dialog {
+    margin: 5px;
+    flex-basis: 20%;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+ }
+.active {
+    color: chocolate;
+}
+.dialog {
+    display:flex;
+    flex-direction: column;
+}
