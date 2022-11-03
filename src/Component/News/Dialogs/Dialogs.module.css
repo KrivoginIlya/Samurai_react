@@ -47,19 +47,3 @@ flex-flow: row nowrap;
     display:flex;
     flex-direction: column;
 }
-
-/*Message block*/
-.message{
-  display: flex;
-  margin: 10px
-}
-.text{
-  margin: 5px;
-  color: white;
-  background-color:rgb(80, 80, 245);
-padding: 0px 10px 0px 10px;
-border-radius: 10px;
-}
-.userPict{
-  width: 50px;
-}
