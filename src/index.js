@@ -4,26 +4,23 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import state, {
-  addPost,
-  updateText,
-  addMessage,
-  subscriber,
-} from "./Redux/state.js";
+import store from "./Redux/state.js";
 
-export const renderEntireTree = (state) => {
+let renderEntireTree = (state) => {
   ReactDOM.render(
     <BrowserRouter>
       <App
-        state={state}
-        addPost={addPost}
-        updateText={updateText}
-        addMessage={addMessage}
+        state={store._getState()}
+        // addPost={store.addPost.bind(store)}
+        // updateText={store.updateText.bind(store)}
+        // addMessage={store.addMessage.bind(store)}
+        dispatch={store.dispatch.bind(store)}
       />
     </BrowserRouter>,
     document.getElementById("root")
   );
 };
 
-renderEntireTree(state);
-subscriber(renderEntireTree); // передает функцию в state.js для обновления данных
+renderEntireTree(store._getState());
+
+store._subscriber(renderEntireTree); // передает функцию в state.js для обновления данных

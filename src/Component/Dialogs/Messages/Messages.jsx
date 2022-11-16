@@ -1,17 +1,18 @@
 import React from "react";
 import Message from "./Message.jsx"
+import { upDateText, addMessageAction} from "../../../Redux/state.js"
 
 
 const Messages = (props) => {
     const messageState = props.message.map (m=> <Message id= {m.id} text={m.text}/>)
     const newMessageElement = React.createRef()
 
-    const addNewMessage = () => {    
+    const addNewMessage = () => {  
     const messageText = newMessageElement.current.value
-    props.updateText(messageText)   
+     props.dispatch(upDateText(messageText))   
     }
     const addMessage =() => { 
-    props.addMessage()
+        props.dispatch(addMessageAction())
     }
 return (
     <div>
